@@ -1,4 +1,4 @@
 name: Hello, Bunny
 markdown: redcarpet
 pygments: true
-exclude: lib/
+exclude: ['lib/']

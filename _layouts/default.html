@@ -7,21 +7,28 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/assets/css/main.less.css">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="/assets/css/syntax.css">
 
         <!-- Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
+
+        <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/js/jquery.backstretch.min.js"></script>
+        <script type="text/javascript" src="/assets/js/main.js"></script>
 
     </head>
     <body>
 
         <div class="site">
           <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
+            <h1 class="title">Hello, Bunny</h1>
+            <div class="img"></div>
           </div>
 
-          {{ content }}
+          <div class="content">
+            {{ content }}
+          </div>
 
           <div class="footer">
             <div class="contact">
