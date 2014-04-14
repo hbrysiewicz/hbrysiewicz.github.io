@@ -10,10 +10,27 @@ h1 {
 
 a {
   text-decoration: none;
+  color: #666 !important;
 }
 
 a:hover {
   text-decoration: none !important;
+  color: #e6005c !important;
+}
+
+#social {
+  position: absolute;
+  z-index: 999;
+  top: 30%;
+  left: 45%;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-link {
+  display: inline;
+  float: left;
+  padding-right: 20px;
 }
 
 .header {
@@ -21,6 +38,7 @@ a:hover {
   padding: 0;
   width: 100%;
   height: 510px;
+  position: relative;
 }
 
 .title {
@@ -35,7 +53,7 @@ a:hover {
 .img {
   height: 100%;
   width: 100%;
-  -webkit-filter: blur(3px);
+  -webkit-filter: blur(2px);
 }
 
 .content {
@@ -48,19 +66,31 @@ a:hover {
 .posts {
   list-style-type: none;
   margin: 0px auto;
-  width: 60%;
+  padding-top: 40px;
+  width: 80%;
 }
 
 .post-title {
   font-size: 2.0em;
   padding: 20px;
   width: 100%;
+  background-color: #eee;
+  margin-bottom: 20px;
 }
 
-.post-title-link:hover a {
-  color: #FF6600 !important;
+.post-title-link {
+  padding-left: 20px;
 }
 
 .post-date {
-  font-size: .8em;
+  font-size: .6em;
+}
+
+.post {
+  font-size: 1.2em;
+}
+
+.divider {
+  border: 1px solid #666;
+  width: 100%;
 }
