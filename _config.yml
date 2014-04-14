@@ -2,3 +2,4 @@ name: Hello, Bunny
 markdown: redcarpet
 pygments: true
 exclude: ['lib/']
+permalink: /:year-:month-:day-:title.html
