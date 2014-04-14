@@ -18,6 +18,10 @@ a:hover {
   color: #e6005c !important;
 }
 
+.pink {
+  color: #e6005c !important;
+}
+
 #social {
   position: absolute;
   z-index: 999;
@@ -93,4 +97,13 @@ a:hover {
 .divider {
   border: 1px solid #666;
   width: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #eee;
+  padding-top: 20px;
 }
