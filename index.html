@@ -4,10 +4,14 @@ title: Hello, Bunny
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li class="post-title">
+        <div class="post-title-link">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </div>
+        <span class="post-date">{{ post.date | date_to_string }}</span>
+      </li>
     {% endfor %}
   </ul>
 </div>
