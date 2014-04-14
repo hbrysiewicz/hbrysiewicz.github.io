@@ -7,11 +7,13 @@ title: Hello, Bunny
   <ul class="posts">
 
     {% for post in site.posts %}
-      <li class="post-title">
+      <li class="post-title row">
 
-        <div class="post-title-link">
+        <div class="post-title-link col-md-6">
           <a href="{{ post.url }}">{{ post.title }}</a>
+        </div>
 
+        <div class="col-md-6">
           <span class="post-date">
             <span class="fa fa-clock-o fa-1x"></span>
             {{ post.date | date_to_string }}

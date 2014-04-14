@@ -22,6 +22,14 @@ a:hover {
   color: #e6005c !important;
 }
 
+.site {
+  position: relative;
+}
+
+.site-container {
+  padding-bottom: 80px;
+}
+
 #social {
   position: absolute;
   z-index: 999;
@@ -29,6 +37,12 @@ a:hover {
   left: 45%;
   list-style-type: none;
   padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #social {
+    top: 40%;
+  }
 }
 
 .social-link {
@@ -57,7 +71,6 @@ a:hover {
 .img {
   height: 100%;
   width: 100%;
-  -webkit-filter: blur(2px);
 }
 
 .content {
