@@ -1,6 +1,7 @@
 ---
 layout:   post
 title:    "Ember.js Wysiwyg Component with Summernote"
+description: "Ember.js wysiwyg component using summernote editor"
 comments: true
 date:     2014-04-18 10:25
 tags:     [emberjs, components]

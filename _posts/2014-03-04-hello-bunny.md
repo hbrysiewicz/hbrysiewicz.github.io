@@ -1,6 +1,7 @@
 ---
 layout:   post
 title:    "Hello, Bunny"
+description: "An introductory post to the beginning of my blogging life"
 comments: true
 date:     2014-03-04 09:29:10
 ---
