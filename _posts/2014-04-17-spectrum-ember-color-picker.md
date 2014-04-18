@@ -2,7 +2,7 @@
 layout:   post
 title:    "Ember.js Color Picker - Spectrum.js, HEX and RGB"
 comments: true
-date:     2014-03-04 09:29:10
+date:     2014-04-16 09:29:10
 ---
 
 I realized this week I have 'officially' been paid to make Ember.js apps for 13 months now. That is a long time considering the infancy of Ember.js. One of the first things I did that was fun and exciting was making a color picker, using Spectrum, that kept the hex, rgb, and color-picker in sync.
