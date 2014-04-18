@@ -1,7 +1,8 @@
 ---
-layout: post
-title:  "Hello, Bunny"
-date:   2014-03-04 09:29:10
+layout:   post
+title:    "Hello, Bunny"
+comments: true
+date:     2014-03-04 09:29:10
 ---
 
 I am finally getting around to setting up my own blog. I feel that far too often I find myself working on something that would be useful to reference or that may make someone else's developing life a bit easier. My hesitation has been partly due to time commitment as well as quality of posts but I've accepted I won't get better at posting unless I try.
