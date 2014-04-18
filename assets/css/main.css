@@ -18,6 +18,14 @@ a:hover {
   color: #e6005c !important;
 }
 
+.post a {
+  color: #e6005c !important;
+}
+
+.post a:hover {
+  color: #f2a518 !important;
+}
+
 .pink {
   color: #e6005c !important;
 }
