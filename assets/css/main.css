@@ -41,15 +41,35 @@ a:hover {
 #social {
   position: absolute;
   z-index: 999;
-  top: 30%;
+  top: 35%;
   left: 45%;
   list-style-type: none;
   padding: 0;
 }
 
-@media screen and (max-width: 600px) {
+#subtitle {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  z-index: 900;
+  color: #666;
+  width: 40%;
+}
+
+#subtitle > h2 {
+  font-weight: 400 !important;
+  font-size: 1.0em;
+  font-style: italic;
+  color: #c32363;
+}
+
+@media screen and (max-width: 599px) {
   #social {
-    top: 40%;
+    top: 48%;
+  }
+
+  #subtitle {
+    top: 35%;
   }
 }
 
