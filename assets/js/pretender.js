@@ -3,7 +3,7 @@ var forEach = [].forEach;
 function Pretender(maps){
   maps = maps || function(){};
   // Herein we keep track of RouteRecognizer instances
-  // keyed by HTTP method
+  // keyed by HTTP method. Feel free to add more as needed.
   this.registry = {
     GET: new RouteRecognizer(),
     PUT: new RouteRecognizer(),
@@ -13,7 +13,9 @@ function Pretender(maps){
     HEAD: new RouteRecognizer()
   };
 
-  this.defaultHeaders = {};
+  this.handlers = [];
+  this.handledRequests = [];
+  this.unhandledRequests = [];
 
   // reference the native XMLHttpRequest object so
   // it can be restored later
@@ -57,21 +59,38 @@ Pretender.prototype = {
   patch: verbify('PATCH'),
   head: verbify('HEAD'),
   register: function register(verb, path, handler){
+    handler.numberOfCalls = 0;
+    this.handlers.push(handler);
+
     var registry = this.registry[verb];
     registry.add([{path: path, handler: handler}])
   },
   handleRequest: function handleRequest(request){
-    var registry = this.registry[request.method.toUpperCase()],
-        matches = registry.recognize(request.url),
-        match = matches ? matches[0] : null;
+    var handler = this._handlerFor(request);
 
+    if (handler) {
+      handler.handler.numberOfCalls++;
+      this.handledRequests.push(request);
+      request.respond.apply(request, handler.handler(request));
+    } else {
+      this.unhandledRequests.push(request);
+      this.unhandledRequest(request.method.toUpperCase(), request.url, request);
+    }
+  },
+  unhandledRequest: function(verb, path, request) {
+    throw new Error("Pretender intercepted "+verb+" "+path+" but no handler was defined for this type of request")
+  },
+  _handlerFor: function(request){
+    var registry = this.registry[request.method.toUpperCase()];
+    var matches = registry.recognize(request.url);
 
+    var match = matches ? matches[0] : null;
     if (match) {
       request.params = match.params;
-      request.respond.apply(request, match.handler(request));
-    } else {
-      request.respond(404, {}, "");
+      request.queryParams = matches.queryParams;
     }
+
+    return match;
   },
   shutdown: function shutdown(){
     window.XMLHttpRequest = this._nativeXMLHttpRequest
