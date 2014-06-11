@@ -4,7 +4,7 @@ title:    "Ember.js Image-Zoom and Preview Components"
 description: "Creating two components that interact with eachother to provide
 an image preview and zoomed-in preview."
 comments: true
-date:     2014-06-10 18:23
+date:     2014-06-11 00:00
 tags:     [emberjs, components, image, ui]
 ---
 
