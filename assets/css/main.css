@@ -8,6 +8,14 @@ h1 {
   font-weight: 300;
 }
 
+h2 > small {
+  padding-left: 20px;
+}
+
+h3 {
+  color: #f2a518 !important;
+}
+
 iframe {
   height: 500px !important;
 }
@@ -152,6 +160,10 @@ a:hover {
   width: 100%;
   margin-top: 12px;
   margin-bottom: 24px;
+}
+
+.divider.light {
+  border: 1px solid #eee;
 }
 
 #footer {
