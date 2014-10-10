@@ -11,4 +11,4 @@ For the July 2014 SanDiego.js speaker Meetup I gave a lightning talk on <a href=
 
 <iframe width="100%" src="//www.youtube.com/embed/FZ5pZFLwwjA" frameborder="0" allowfullscreen></iframe>
 
-The repository for the slides with examples are at <a href='https://github.com/hbrysiewicz/sdjs-fakeit'>hbrysiewicz/sdjs-fakeit</a>.
+The repository for the slides with examples are at <a href='https://hbrysiewicz.github.io/sdjs-pretender'>hbrysiewicz/sdjs-pretender</a>.
