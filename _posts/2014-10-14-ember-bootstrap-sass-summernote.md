@@ -15,7 +15,7 @@ This post is a response to a comment from the [Ember.js Wysiwyg Summernote post]
 
 <img src='/assets/img/ember-cli-bootstrap-comment.png' width='100%'>
 
-I chose to stick to vanilla <a href='http://getbootstrap.com'>Bootstrap</a> for this solution. There are a few packaged modules out there specifically for <a href='http://www.ember-cli.com/'>Ember-CLI</a> but I have yet to find one that <strong>just works</strong>. To be clear this walkthrough will actually get Sass and Bootstrap working.
+I chose to stick to vanilla <a href='http://getbootstrap.com'>Bootstrap</a> for this solution. There are a few packaged modules out there specifically for <a href='http://www.ember-cli.com/'>Ember-CLI</a> but I have yet to find one that <strong>just works</strong>. This walkthrough will actually get Sass and Bootstrap-Sass working together. I'll also explain how to get the default <a href='http://getbootstrap.com/components/#glyphicons'>Bootstrap Glyphicons</a> pack working as well as how to add the <a href='http://fortawesome.github.io/Font-Awesome/'>FontAwesome</a> icon pack.
 
 ### New Ember-CLI Application
 
@@ -30,16 +30,16 @@ You may notice that running `ember new` takes care of the `npm install` and `bow
 
 ### Add Sass and Bootstrap
 
-Using Sass in place of CSS is extremely easy with the help of <a href='https://github.com/joliss/broccoli-sass'>joliss/broccoli-sass</a>. This is one of the many plugins for <a href='https://github.com/broccolijs/broccoli'>Broccoli</a> that <a href='https://twitter.com/jo_liss'>Jo Liss</a> has created, in addition to the work put towards Broccoli itself.
+Using Sass in place of CSS is extremely easy with the help of <a href='https://github.com/joliss/broccoli-sass'>joliss/broccoli-sass</a>. This is one of the many plugins for <a href='https://github.com/broccolijs/broccoli'>Broccoli</a> that <a href='https://twitter.com/jo_liss'>Jo Liss</a> has created, in addition to the work put towards Broccoli itself. This will also be necessary so that the `bootstrap-official-sass` package can work.
 
-Once the install completes, be sure to rename the default `app.css` file to `app.scss`. If the server is running it will throw an error, simply restart the server.
+Once the install completes, be sure to rename the default `app/styles/app.css` file to `app/styles/app.scss`. If the server is running it will throw an error, simply restart the server.
 
 <pre class='terminal'>
 $ npm install --save broccoli-sass
 $ mv app/styles/app.css app/styles/app.scss
 </pre>
 
-This example will use the `bootstrap-sass-official` <a href='http://bower.io/'>Bower</a> package. To get <a href='http://getbootstrap.com/components/#glyphicons'>Glyphicons</a> working we will need to also add another Broccoli plugin for static asset compilation called `broccoli-static-compiler`.
+This example will use the `bootstrap-sass-official` <a href='http://bower.io/'>Bower</a> package. To get Glyphicons working we will need to also add another Broccoli plugin for static asset compilation called `broccoli-static-compiler`.
 
 <pre class='terminal'>
 $ bower install --save bootstrap-sass-official
@@ -74,7 +74,7 @@ Now, to get the Glyphicons working the font assets need to be moved into the `di
 
 Since the first argument, the tree, is the direct location of the Bootstrap Glyphicon fonts the `srcDir` is just the root of this tree. Broccoli builds everything into the `dist` directory so we don't need to preface the `destDir` with this value.
 
-It is important to note the addition of `bootstrapFonts` on line 14. Ember-CLI provides the `toTree()` method which can take any number of trees to be merged into your app tree.
+It is important to note the addition of `bootstrapFonts` on line 14. Ember-CLI provides the `toTree()` method which can take any number of trees to be merged into your app tree. The argument passed into toTree must be a single tree or an array of trees.
 
 {% highlight JavaScript linenos %}
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
