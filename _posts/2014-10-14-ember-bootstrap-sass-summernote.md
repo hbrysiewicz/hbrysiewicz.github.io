@@ -110,4 +110,8 @@ html, body {
 }
 {% endhighlight %}
 
+### Example Repository
 
+In response to the aforementioned comment I created an example repository with Ember-CLI, Bootstrap, Sass, Fontawesome, and Summernote which can be found at <a href='https://github.com/hbrysiewicz/ember-cli-summernote'>hbrysiewicz/ember-cli-summernote</a>.
+
+I realized when writing this blog post that the Ember-CLI Version for that project was `0.0.46` which is a bit old. For this example I used version `0.1.1` which is the newest at time of writing. It can be found at <a href='https://github.com/hbrysiewicz/ember-cli-bootstrap-example'>hbrysiewicz/ember-cli-bootstrap-example</a>
