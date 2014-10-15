@@ -25,6 +25,11 @@ a {
   color: #666 !important;
 }
 
+pre {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+
 a:hover {
   text-decoration: none !important;
   color: #e6005c !important;
@@ -40,6 +45,14 @@ a:hover {
 
 .pink {
   color: #e6005c !important;
+}
+
+.warning {
+  background-color: #ffe6cc;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-style: italic;
+  border-radius: 10px;
 }
 
 .site {
