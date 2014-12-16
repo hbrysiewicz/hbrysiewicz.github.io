@@ -7,7 +7,7 @@ date:     2014-12-16 13:03
 tags:     [emberjs, components, facebook, ember-cli]
 ---
 
-Getting Facebook integrated into an existing website may sound daunting but using the Facebook UI API and Ember together was entirely to easy.
+Getting Facebook integrated into an existing website may sound daunting but using the Facebook UI API and Ember together was entirely too easy.
 
 <a href='http://ember-cli.com'>Ember-CLI</a> has a directory called initializers that are loaded at app start up. This proves useful for things such as Google Analytics or Facebook SDK initialization.
 
