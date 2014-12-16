@@ -61,3 +61,17 @@ export default Ember.Component.extend({
 {% endhighlight %}
 
 Check out what other pieces you could use in your Ember application by visiting the <a href='https://developers.facebook.com/docs/javascript/quickstart/v2.2?locale=es_ES'>Facebook JS SDK Documentation</a>
+<br><br>
+<div class='warning'>
+  <strong>Update:</strong> I need the url sent in the FB send dialogue to be relative to the environment I am in so I added a little mixin I can use throughout the site to generate proper links for each environment. Check it out!
+</div>
+{% highlight JavaScript linenos %}
+import Ember from 'ember';
+
+export default Ember.Mixin.create({
+  currentBaseUrl: function() {
+    var pathArray = window.location.href.split( '/' );
+    return '%@//%@'.fmt(pathArray[0], pathArray[2]);
+  }.property()
+});
+{% endhighlight %}
