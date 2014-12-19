@@ -38,21 +38,5 @@ imageUrl: assets/img/hbrysiewicz_fp.jpg
     </div>
 
     <div class='divider light'></div>
-
-    <div class="row">
-      <div class='col-md-2'>
-        <a href="http://qconsf.com">
-          <img src='/assets/img/qcon_icon.ico'>
-        </a>
-      </div>
-
-      <div class='col-md-10'>
-        I will be speaking about <a href="http://emberjs.com">Ember.js</a> and
-        what makes it an enterprise application client-side framework at
-        <a href="http://qconsf.com/">QConSF</a> in November 2014. <a href="http://qconsf.com/presentation/ember-enterprise-application-framework">More Details...</a>
-      </div>
-    </div>
-
-    <div class='divider light'></div>
   </div>
 </div>
