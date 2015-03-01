@@ -55,6 +55,14 @@ a:hover {
   border-radius: 10px;
 }
 
+.update {
+  background-color: #c3eeb9;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-style: italic;
+  border-radius: 10px;
+}
+
 .site {
   position: relative;
 }

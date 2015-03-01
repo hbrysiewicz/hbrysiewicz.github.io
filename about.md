@@ -38,5 +38,19 @@ imageUrl: assets/img/hbrysiewicz_fp.jpg
     </div>
 
     <div class='divider light'></div>
+
+    <div class="row">
+      <div class='col-md-2'>
+        <a href="http://www.meetup.com/sandiego-ember/" style="float:left;width:64px;padding-top:8px;">
+          <img src='/assets/img/nametag.png' width=64>
+        </a>
+      </div>
+
+      <div class='col-md-10'>
+        I am founder and organizer of San Diego Ember. The group originated as a sub-event within SanDiego.js and became it's own organization in February 2015. We meet monthly to discuss the World of Ember.
+      </div>
+    </div>
+
+    <div class='divider light'></div>
   </div>
 </div>
