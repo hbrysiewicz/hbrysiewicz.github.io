@@ -78,5 +78,5 @@ export default Ember.Mixin.create({
 
 
 <div class='update'>
-<strong>Update:</strong> I expand on this post in a talk I gave for a <a href="http://sandiegojs.org">SanDiego.js</a> and <a href="http://www.meetup.com/sandiego-ember/">San Diego Ember</a> talk in February 2015. Watch it <a href="http://youtu.be/W73kfT-G7Cs">here</a>.
+<strong>Update:</strong> I expand on this post in a talk I gave for a <a href="http://sandiegojs.org">SanDiego.js</a> and <a href="http://www.meetup.com/sandiego-ember/">San Diego Ember</a> talk in February 2015. Watch it <a href="http://youtu.be/W73kfT-G7Cs">here</a> or view the slides <a href="http://hbrysiewicz.github.io/ember-fbcomp/#/">here</a>
 </div>
