@@ -30,10 +30,7 @@ imageUrl: assets/img/hbrysiewicz_fp.jpg
       </div>
 
       <div class='col-md-10'>
-        I have been an organizer for SanDiego.js since April 2014. We have Meetups
-        in North County and downtown San Diego. All of our events are listed at our
-        <a href="http://www.meetup.com/sandiegojs/">Meetup.com Page</a>. Stop in
-        and say 'Hello' some time!
+        I have been an organizer for SanDiego.js since April 2014. We have Meetups in North County and downtown San Diego. All of our events are listed at our <a href="http://www.meetup.com/sandiegojs/">Meetup.com Page</a>. Stop in and say 'Hello' some time!
       </div>
     </div>
 
@@ -47,7 +44,7 @@ imageUrl: assets/img/hbrysiewicz_fp.jpg
       </div>
 
       <div class='col-md-10'>
-        I am founder and organizer of San Diego Ember. The group originated as a sub-event within SanDiego.js and became it's own organization in February 2015. We meet monthly to discuss the World of Ember.
+        I am founder and organizer of <a href="http://www.meetup.com/sandiego-ember/">San Diego Ember</a>. The group originated as a sub-event within SanDiego.js and became it's own organization in February 2015. We meet monthly to discuss the World of Ember. We also hold workshops and other events.
       </div>
     </div>
 
