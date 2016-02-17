@@ -2,6 +2,6 @@ name: Hello, Bunny
 description: An Ember.js and JavaScript blog by Heather Brysiewicz
 url: http://hbrysiewicz.com/
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 permalink: /:year-:month-:day-:title.html
 baseurl: .
