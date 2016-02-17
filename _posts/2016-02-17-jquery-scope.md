@@ -15,14 +15,14 @@ Here is a simple and effective way to pass different [jQuery](https://jquery.com
 
 A cleaner solution is to have two seperate selector handles, one on the unit iframe document and one on the `top.document`. This approach can be used to limit the selector for anything but for my case I needed `top.document`.
 
-{% highlight js linenos %}
+{% highlight js %}
 import $unit from 'jquery'
 import $top from 'utils/jquery-top'
 {% endhighlight %}
 
 In the above example `jquery` is just the defacto `jquery` installed as a dependency via `npm`. The second `import` statement is a custom abstraction to the defacto `jquery` library which allows me to override the [seletor method](http://devdocs.io/jquery/jquery#jQuery1) and limit the context to `top.document`.
 
-{% highlight js linenos %}
+{% highlight js %}
 import jQuery from 'jquery'
 
 jQuery.noConflict()
@@ -37,7 +37,7 @@ export default bling
 
 Now when I'm in the unit packaged code I can have a handle on both the `top.document` as well as the individual unit iframe `document`.
 
-{% highlight js linenos %}
+{% highlight js %}
 $unit('.content-body').text('This is an example')
 $top('.unit-iframe').addClass('showing')
 {% endhighlight %}

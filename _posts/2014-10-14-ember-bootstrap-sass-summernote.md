@@ -50,7 +50,7 @@ That is all of the dependencies.
 
 Include the Bootstrap styles in your application by adding an `@import` line to your `app/styles/app.scss` file.
 
-{% highlight CSS %}
+{% highlight css %}
 @import 'bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap';
 
 html, body {
@@ -60,7 +60,7 @@ html, body {
 
 Add an import statement for the javascript inside the `Brocfile.js`.
 
-{% highlight js linenos %}
+{% highlight js %}
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var app = new EmberApp();
 
@@ -76,7 +76,7 @@ Since the first argument, the tree, is the direct location of the Bootstrap Glyp
 
 It is important to note the addition of `bootstrapFonts` on line 14. Ember-CLI provides the `toTree()` method which can take any number of trees to be merged into your app tree. The argument passed into toTree must be a single tree or an array of trees.
 
-{% highlight js linenos %}
+{% highlight js %}
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var app = new EmberApp();
 
@@ -101,7 +101,7 @@ A lot of people prefer FontAwesome over Glyphicons. They do provide more options
 $ bower install --save fontawesome
 </pre>
 
-{% highlight CSS linenos %}
+{% highlight css %}
 @import 'bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap';
 @import 'bower_components/fontawesome/scss/font-awesome';
 
