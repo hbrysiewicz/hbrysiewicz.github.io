@@ -13,7 +13,7 @@ Getting Facebook integrated into an existing website may sound daunting but usin
 
 Here is what my `facebook-sdk.js` initializer looks like. Note the use of global FB. This is used so that JSHint doesn't freak out when building the project.
 
-{% highlight JavaScript linenos %}
+{% highlight js linenos %}
 /* global FB */
 export default {
   name: 'facebook',
@@ -42,7 +42,7 @@ export default {
 
 Now I can use the global FB.ui in components with ease. So far I've only integrated the Facebook Send Dialogue into the application, but this alone can show how easy it is for the Facebook SDK to now integrate with your Ember Application.
 
-{% highlight JavaScript linenos %}
+{% highlight js linenos %}
 /* global FB */
 import Ember from 'ember';
 

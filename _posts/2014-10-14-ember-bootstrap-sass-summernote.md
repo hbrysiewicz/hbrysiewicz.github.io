@@ -60,7 +60,7 @@ html, body {
 
 Add an import statement for the javascript inside the `Brocfile.js`.
 
-{% highlight JavaScript linenos %}
+{% highlight js linenos %}
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var app = new EmberApp();
 
@@ -76,7 +76,7 @@ Since the first argument, the tree, is the direct location of the Bootstrap Glyp
 
 It is important to note the addition of `bootstrapFonts` on line 14. Ember-CLI provides the `toTree()` method which can take any number of trees to be merged into your app tree. The argument passed into toTree must be a single tree or an array of trees.
 
-{% highlight JavaScript linenos %}
+{% highlight js linenos %}
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var app = new EmberApp();
 
