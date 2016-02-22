@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Heather Brysiewicz
-description: CEO and Founder of 4EA Inc
+description: Community Organizer, Consultant and Founder at 4ea Inc
 imageUrl: assets/img/hbrysiewicz_fp.jpg
 ---
 
