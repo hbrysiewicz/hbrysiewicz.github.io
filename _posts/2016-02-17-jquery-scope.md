@@ -22,12 +22,16 @@ import $top from 'utils/jquery-top'
 
 In the above example `jquery` is just the defacto `jquery` installed as a dependency via `npm`. The second `import` statement is a custom abstraction to the defacto `jquery` library which allows me to override the [seletor method](http://devdocs.io/jquery/jquery#jQuery1) and limit the context to `top.document`.
 
+<div class='warning'>
+<strong>Updated (02-22-2016):</strong> The following snippet of code was updated to now use default args, available with ES2015, instead of an or operator in the bling method. Thank you to <a href=http://twitter.com/treyhunner>@treyhunner</a> <a href=https://twitter.com/treyhunner/status/701887839718342656>for pointing this out</a>!
+</div>
+
 {% highlight js %}
 import jQuery from 'jquery'
 
 jQuery.noConflict()
-let bling = function(selector, context) {
-  return new jQuery.fn.init(selector, context || top.document)
+let bling = function(selector, context = top.document) {
+  return new jQuery.fn.init(selector, context)
 }
 bling.fn = bling.prototype = jQuery.fn
 jQuery.extend(bling, jQuery)
