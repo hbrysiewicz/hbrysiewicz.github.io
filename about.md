@@ -2,7 +2,7 @@
 layout: default
 title: Heather Brysiewicz
 description: Community Organizer, Consultant and Founder at 4ea Inc
-imageUrl: assets/img/hbrysiewicz_fp.jpg
+imageUrl: http://gravatar.com/avatar/c1ab1a8a3169311b0062176c2814feff?s=320
 emberUrl: assets/img/nametag.png
 leagueUrl: assets/img/league.png
 ---
@@ -19,7 +19,7 @@ leagueUrl: assets/img/league.png
 <div class="divider"></div>
 
 <div class="row post">
-  <div class="col-md-3">
+  <div class="col-md-3 gravatar">
     <img src='{{ page.imageUrl }}' />
   </div>
 
@@ -27,12 +27,12 @@ leagueUrl: assets/img/league.png
     <div class="row">
       <div class='col-md-2'>
         <a href="http://sandiegojs.org" style="float:left;width:64px;">
-          <img src='/assets/img/sandiegojs_icon.ico' width=64>
+          <img src='/assets/img/sandiegojs_icon.ico' width='64'>
         </a>
       </div>
 
       <div class='col-md-10'>
-        I have been an organizer for SanDiego.js since April 2014. We have Meetups in North County and downtown San Diego. All of our events are listed at our <a href="http://www.meetup.com/sandiegojs/">Meetup.com Page</a>. Stop in and say 'Hello' some time!
+        I have been an organizer for SanDiego.js since April 2014. We have Meetups across San Diego county. All of our events are listed at our <a href="http://www.meetup.com/sandiegojs/">Meetup.com Page</a>. Stop in and say 'Hello' some time!
       </div>
     </div>
 
@@ -41,7 +41,7 @@ leagueUrl: assets/img/league.png
     <div class="row">
       <div class='col-md-2'>
         <a href="http://www.meetup.com/sandiego-ember/" style="float:left;width:64px;padding-top:8px;">
-          <img src='{{ page.emberUrl }}' width=64>
+          <img src='{{ page.emberUrl }}' width='64'>
         </a>
       </div>
 
@@ -55,7 +55,7 @@ leagueUrl: assets/img/league.png
     <div class="row">
       <div class='col-md-2'>
         <a href='http://www.jointheleague.org/' style="float:left;width:64px;padding-top:8px;">
-          <img src='{{ page.leagueUrl }}' width=64>
+          <img src='{{ page.leagueUrl }}' width='64'>
         </a>
       </div>
 

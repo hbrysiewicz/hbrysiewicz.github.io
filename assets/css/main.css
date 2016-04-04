@@ -25,6 +25,12 @@ a {
   color: #666 !important;
 }
 
+.header a {
+  text-decoration: none;
+  color: #eee !important;
+  text-shadow: 1px 1px 1px #e6005c; 
+}
+
 pre {
   margin-top: 16px !important;
   margin-bottom: 16px !important;
@@ -33,6 +39,7 @@ pre {
 a:hover {
   text-decoration: none !important;
   color: #e6005c !important;
+  text-shadow: none;
 }
 
 .post a {
@@ -74,19 +81,15 @@ a:hover {
 #social {
   position: absolute;
   z-index: 999;
-  top: 35%;
-  left: 45%;
   list-style-type: none;
   padding: 0;
 }
 
 #subtitle {
-  position: absolute;
-  top: 25%;
-  left: 45%;
   z-index: 900;
-  color: #666;
-  width: 40%;
+  position: absolute;
+  margin-top: 20px;
+  font-size: 14px;
 }
 
 #subtitle > h2 {
@@ -94,6 +97,10 @@ a:hover {
   font-size: 1.0em;
   font-style: italic;
   color: #c32363;
+}
+
+#subtitle a:hover {
+  color: #eee !important;
 }
 
 @media screen and (max-width: 599px) {
@@ -112,27 +119,36 @@ a:hover {
   padding-right: 20px;
 }
 
+.social-text {
+  font-size: 20px;
+  font-style: italic;
+}
+
 .header {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 510px;
   position: relative;
+  background-color: rgba(46, 61, 66, 1);
+}
+
+.title-wrap {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 100%;
 }
 
 .title {
-  position: absolute;
-  top: 10%;
-  left: 45%;
   font-size: 4em;
-  z-index: 900;
-  color: #666;
+  color: #fff !important;
 }
 
 .img {
   height: 100%;
   width: 100%;
-  background: url('/assets/img/header.jpg') no-repeat;
+  background: url('/assets/img/header_hd.jpg') no-repeat;
 }
 
 .content {
@@ -174,6 +190,10 @@ a:hover {
 
 .post {
   font-size: 1.2em;
+}
+
+.post .gravatar img {
+  width: 100%;
 }
 
 .divider {

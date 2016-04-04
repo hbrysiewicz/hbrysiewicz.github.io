@@ -58,11 +58,13 @@
 
     <div class="site">
       <div class="header">
-        <h1 class="title"><a href="/">Hello, Bunny</a></h1>
-        {% include social-links.html %}
-        <div class="img"></div>
-        <div id="subtitle">
-          <h2>An Ember.js and JavaScript blog by <a href='/about.html'>Heather Brysiewicz</a></h2>
+        <div class="img"></div>  
+        <div class='title-wrap'>
+          <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+          {% include social-links.html %}
+          <div id="subtitle">
+            <h2>An Ember.js and JavaScript blog by <a href='/about.html'>Heather Brysiewicz</a></h2>
+          </div>
         </div>
       </div>
 
