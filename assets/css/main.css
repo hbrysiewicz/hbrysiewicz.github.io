@@ -103,16 +103,6 @@ a:hover {
   color: #eee !important;
 }
 
-@media screen and (max-width: 599px) {
-  #social {
-    top: 48%;
-  }
-
-  #subtitle {
-    top: 35%;
-  }
-}
-
 .social-link {
   display: inline;
   float: left;
@@ -137,7 +127,7 @@ a:hover {
   position: absolute;
   top: 60%;
   left: 5%;
-  width: 100%;
+  width: 95%;
 }
 
 .title {
@@ -232,3 +222,15 @@ a:hover {
     background-image: url('/assets/img/header_hd.jpg');
   }
 }*/
+
+@media screen and (max-width: 320px) {
+  .title-wrap {
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .title-wrap {
+    top: 50%;
+  }
+}
