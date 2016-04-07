@@ -80,13 +80,13 @@ a:hover {
 
 #social {
   position: absolute;
-  z-index: 999;
+  z-index: 800;
   list-style-type: none;
   padding: 0;
 }
 
 #subtitle {
-  z-index: 900;
+  z-index: 800;
   position: absolute;
   margin-top: 20px;
   font-size: 14px;
@@ -204,6 +204,7 @@ a:hover {
   height: 60px;
   background-color: #eee;
   padding-top: 20px;
+  z-index: 900;
 }
 
 .comments {
