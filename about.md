@@ -1,10 +1,12 @@
 ---
 layout: default
 title: Heather Brysiewicz
-description: Community Organizer, Consultant and Founder at 4ea Inc
+description: Director of Operations at DockYard and Community Developer
 imageUrl: http://gravatar.com/avatar/c1ab1a8a3169311b0062176c2814feff?s=320
 emberUrl: assets/img/nametag.png
 leagueUrl: assets/img/league.png
+sdjsUrl: assets/img/sandiegojs_icon.ico
+narwinUrl: assets/img/narwin-hip.png
 ---
 
 <div class="row">
@@ -26,8 +28,22 @@ leagueUrl: assets/img/league.png
   <div class="col-md-offset-1 col-md-8">
     <div class="row">
       <div class='col-md-2'>
+        <a href="http://dockyard.com" style="float:left;width:64px;padding-top:10px">
+          <img src='{{ page.narwinUrl }}' width='64'>
+        </a>
+      </div>
+
+      <div class='col-md-10'>
+        As an Ember and Elixir Evangelist I flourish at <a href='//dockyard.com'>DockYard</a> with a team dedicated to industry best practices, progressive technology, and stunning design. DockYard is dedicated to investing in software communities - maintaining many open source projects, running conferences and events, and sponsoring open source core contributors.
+      </div>
+    </div>
+
+    <div class='divider light'></div>
+
+    <div class="row">
+      <div class='col-md-2'>
         <a href="http://sandiegojs.org" style="float:left;width:64px;">
-          <img src='/assets/img/sandiegojs_icon.ico' width='64'>
+          <img src='{{ page.sdjsUrl }}' width='64'>
         </a>
       </div>
 
