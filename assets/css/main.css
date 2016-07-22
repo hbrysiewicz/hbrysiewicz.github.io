@@ -28,7 +28,7 @@ a {
 .header a {
   text-decoration: none;
   color: #eee !important;
-  text-shadow: 1px 1px 1px #e6005c; 
+  text-shadow: 1px 1px 1px #e6005c;
 }
 
 pre {
@@ -234,4 +234,9 @@ a:hover {
   .title-wrap {
     top: 50%;
   }
+}
+
+.twitter-tweet, .instagram-media {
+  margin: 0 auto !important;
+  margin-top: 40px !important;
 }
