@@ -3,7 +3,7 @@ layout:   post
 title:    "Video: Pieces of Ember"
 description: "Leverage the Ember Ecosystem outside of Ember"
 comments: true
-date:     2016-07-05 16:10
+date:     2016-08-05 16:10
 tags:     [javascript, emberjs, video, promises, broccoli, htmlbars, handlebars]
 ---
 
