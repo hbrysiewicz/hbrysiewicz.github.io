@@ -28,34 +28,6 @@ narwinUrl: assets/img/narwin-hip.png
   <div class="col-md-offset-1 col-md-8">
     <div class="row">
       <div class='col-md-2'>
-        <a href="http://dockyard.com" style="float:left;width:64px;padding-top:10px">
-          <img src='{{ page.narwinUrl }}' width='64'>
-        </a>
-      </div>
-
-      <div class='col-md-10'>
-        As an Ember and Elixir Evangelist I flourish at <a href='//dockyard.com'>DockYard</a> with a team dedicated to industry best practices, progressive technology, and stunning design. DockYard is dedicated to investing in software communities - maintaining many open source projects, running conferences and events, and sponsoring open source core contributors.
-      </div>
-    </div>
-
-    <div class='divider light'></div>
-
-    <div class="row">
-      <div class='col-md-2'>
-        <a href="http://sandiegojs.org" style="float:left;width:64px;">
-          <img src='{{ page.sdjsUrl }}' width='64'>
-        </a>
-      </div>
-
-      <div class='col-md-10'>
-        I have been an organizer for SanDiego.js since April 2014. We have Meetups across San Diego county. All of our events are listed at our <a href="http://www.meetup.com/sandiegojs/">Meetup.com Page</a>. Stop in and say 'Hello' some time!
-      </div>
-    </div>
-
-    <div class='divider light'></div>
-
-    <div class="row">
-      <div class='col-md-2'>
         <a href="http://www.meetup.com/sandiego-ember/" style="float:left;width:64px;padding-top:8px;">
           <img src='{{ page.emberUrl }}' width='64'>
         </a>
@@ -63,20 +35,6 @@ narwinUrl: assets/img/narwin-hip.png
 
       <div class='col-md-10'>
         I am founder and organizer of <a href="http://www.meetup.com/sandiego-ember/">San Diego Ember</a>. The group originated as a sub-event within SanDiego.js and became it's own organization in February 2015. We meet monthly to discuss the World of Ember. We also hold workshops and other events.
-      </div>
-    </div>
-
-    <div class='divider light'></div>
-
-    <div class="row">
-      <div class='col-md-2'>
-        <a href='http://www.jointheleague.org/' style="float:left;width:64px;padding-top:8px;">
-          <img src='{{ page.leagueUrl }}' width='64'>
-        </a>
-      </div>
-
-      <div class='col-md-10'>
-        I am a volunteer teacher for <a href="http://www.jointheleague.org">The League of Amazing Programmers</a>, a non-profit focused on teaching kids in grades 5 through 12 how to program.
       </div>
     </div>
 
