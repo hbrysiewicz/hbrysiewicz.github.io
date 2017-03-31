@@ -16,8 +16,6 @@ SVG is a vector graphic that scales well and is great for vibrant user interface
 
 SVG and Ember make for an exciting pair. Binding values and responding to events with SVG and Ember components just works and can create beautiful, fast, and responsive interfaces, easily. There was just a presentation on the matter at [EmberConf 2017][ember-conf] by [@jwwweber][jwwweber] that really showcases the flexibility of SVG with Ember. <br><br>
 
-The crux here is that the SVGs be inline within the DOM which isn't always straightforward if you're working with remote assets. <br><br>
-
 In my scenario, I had a model, let's call it `Location`, which had a `belongsTo('image')` for the `Image` model which contained a `url` attribute. This `url` was the asset url for the `Location`'s icon. This asset url could be a `png` or `jpg` or `svg` in certain cases but I knew the data coming into my component was only `Location` models with `svg` urls. <br><br>
 
 An initial option may be to use an `<object>` tag with the external `svg` url in the component template and maybe even a fallback `<img>` tag inside it. This technique for rendering SVGs is covered in more detail in the [CSS Tricks][css-tricks] article for those unfamiliar. <br><br>
