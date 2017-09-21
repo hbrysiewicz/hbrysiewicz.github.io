@@ -50,16 +50,16 @@ This will kick off creation of the API and prompt to download dependencies. Once
 > rm -rf test/{api_name}_web/channels
 ```
 3. In `lib/{api_name}_web/endpoint.ex` file, remove this line:
-```exs
+```elixir
 socket "/socket", {ApiName}Web.UserSocket
 ```
 4. In `lib/{api_name}_web/endpoint.ex` file, remove this line:
-```exs
+```elixir
 only: ~w(css fonts images js favicon.ico robots.txt)
 ```
 and be sure to remove the `,` on the preceding line.
 5. In `lib/{api_name}_web.ex` file, remove these lines:
-```exs
+```elixir
 def channel do
     quote do
       use Phoenix.Channel
@@ -93,7 +93,7 @@ Remove the functions in the newly generated `post_controller` that will not be u
 
 Removing these methods means we can also remove the `alias` for the `Post` module on line 5.
 
-```
+```elixir
 alias {ApiName}.Blog.Post
 ```
 
@@ -145,7 +145,7 @@ A similar thing will have to happen for the corresponding view. Right now we don
 
 And then rename the view module to `{ApiName}Web.V1.PostView`. In the View module, there also is an alias that needs to be updated on line 3 to reflect the new namespace:
 
-```
+```elixir
 alias {ApiName}Web.V1.PostView
 ```
 
@@ -204,7 +204,7 @@ Dependencies for a Phoenix app get added to `mix.exs` in the `defp deps do` bloc
 
 Add a line in the `defp deps do` block of `mix.exs` to include this new dependency.
 
-```exs
+```elixir
 {:ja_serializer, "~> 0.12.0"}
 ```
 
@@ -214,7 +214,7 @@ Whenever a new dependency is added to an Elixir app, `mix deps.get` needs to be 
 
 We need to configure the `json-api` mime-type to serialize JSON API. This can be done inside `config/config.exs`
 
-```exs
+```elixir
 config :phoenix, :format_encoders,
   "json-api": Poison
 
