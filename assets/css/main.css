@@ -50,6 +50,10 @@ a:hover {
   color: #f2a518 !important;
 }
 
+.post p {
+  margin-bottom: 20px;
+}
+
 .pink {
   color: #e6005c !important;
 }

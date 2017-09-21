@@ -9,7 +9,6 @@ tags:     [emberjs, components]
 
 I realized this week I have 'officially' been paid to make Ember.js apps for 13 months now. That is a long time considering the infancy of Ember.js. One of the first things I did that was fun and exciting was making a color picker, using Spectrum, that kept the hex, rgb, and color-picker in sync.
 
-<br><br>
 
 ### The Template
 
@@ -17,11 +16,9 @@ Inside of the component template there is a div to represent the color picker wi
 
 There is also the hex input with the `value` bound to the hex representation of the color. Similar for the rgb inputs, except each one is bound to a different computed property for each r, g, b.
 
-<br><br>
 
 <a class="jsbin-embed" href="http://emberjs.jsbin.com/geyit/10/embed?html">Ember Starter Kit</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
-<br><br>
 
 ### The Component
 
@@ -35,14 +32,11 @@ When any of the rgb inputs is changed, the `color` has to be updated. This is wh
 
 Since `color` is being stored as the string html hex representation nothing too complicated happens inside the `hexValue` computed property but it does give a good example of how to do a computed property with both a set and get.
 
-<br><br>
 
 <a class="jsbin-embed" href="http://emberjs.jsbin.com/geyit/10/embed?js">Ember Starter Kit</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
-<br><br>
 
 ### Final Product
 
-<br><br>
 
 <a class="jsbin-embed" href="http://emberjs.jsbin.com/geyit/10/embed?output">Ember Starter Kit</a><script src="http://static.jsbin.com/js/embed.js"></script>
