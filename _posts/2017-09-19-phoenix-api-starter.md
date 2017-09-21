@@ -3,7 +3,7 @@ layout: post
 title: "Just Beginning: JSON API with Phoenix 1.3"
 description: "Getting started with bare Phoenix 1.3 JSON API"
 comments: true
-date: 2017-03-30 12:44
+date: 2017-09-21 13:06
 tags: [
   elixir,
   phoenix,
