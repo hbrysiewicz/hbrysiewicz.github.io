@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Alexandra Brysiewicz
-description: CEO at 4EA, Inc and Community Developer
+description: Owner at Starshot Technologies and Community Developer
 imageUrl: http://gravatar.com/avatar/c1ab1a8a3169311b0062176c2814feff?s=320
 emberUrl: assets/img/nametag.png
 leagueUrl: assets/img/league.png
