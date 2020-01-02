@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Alexandra Brysiewicz
-description: Owner at Starshot Technologies and Community Developer
+description: CEO at Starshot Technologies and Community Developer
 imageUrl: http://gravatar.com/avatar/c1ab1a8a3169311b0062176c2814feff?s=320
 emberUrl: assets/img/nametag.png
 leagueUrl: assets/img/league.png
