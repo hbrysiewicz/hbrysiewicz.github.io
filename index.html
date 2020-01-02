@@ -6,6 +6,27 @@ title: Alexandra Brysiewicz
 <div id="home">
   <ul class="posts">
 
+    {% for post in site.posts %}
+      <li class="post-box">
+
+        <div class="row post-title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          <div id="post-date" class="post-date">
+            <span class="fa fa-clock-o fa-1x"></span>
+            {{ post.date | date_to_string }}
+            <a href="{{ post.url }}#disqus_thread" class='comments-count'></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="post-summary col-md-12">
+            {{ post.content | strip_html | truncatewords:75 }}<br>
+            <a href="{{ post.url }}" class="pink">Read more...</a><br><br>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+
   </ul>
 </div>
 
