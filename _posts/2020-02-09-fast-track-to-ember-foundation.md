@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fast-track to solid Ember Foundations"
+title: "Fast-track to Solid Ember Foundations"
 description: "Your cheat sheet to getting a new Ember app up and running, right"
 comments: true
 date: 2020-02-09 0:00
@@ -21,7 +21,6 @@ Everything is TL;DR.
 Bonus [PurgeCSS][purge] setup. 
 Enjoy!
 
-<br>
 
 ### Initialization
 
@@ -29,19 +28,18 @@ Enjoy!
 
 This initializes the directory and all dependencies for getting started.
 
-`cd {name}}`
+`cd {name}`
 
 `yarn install`
 
 Will install dependencies for application. Newer versions of ember-cli should use yarn by default, but in older versions you may need to pass `--yarn true` to your `ember new` command.
 
-<br>
 
 ### PostCSS & Tailwind
 
 Add some swag to your code base.
 
-`yarn add tailwindcss postcss autoprefixer postcss-mixins postcss-nested postcss-simple-vars postcss-import -D`
+`yarn add tailwindcss postcss ember-cli-postcss autoprefixer postcss-mixins postcss-nested postcss-simple-vars postcss-import -D`
 
 This adds [Tailwind][tailwind], [PostCSS][postcss], and PostCSS plugins that we use for every project. If you want to learn more about the plugins being used:
 * [autoprefixer](https://github.com/postcss/autoprefixer)
@@ -105,20 +103,19 @@ module.exports = {
 
 This would be where all the fun Tailwind configuration would happen when you're ready to dive into it. Tailwind is also great as it is just out of the box with defaults.
 
-<br>
 
 ### Transition to Pods
 
-Create a new directory inside `app/` called `pods/` and another directory inside `pods/` called `components`.
+Create a new directory inside `app/` called `pods/` and then a directory for `components` and `application` template inside that.
 
 ```
-mkdir -p pods pods/components
+mkdir -p pods pods/components pods/application
 ```
 
 Move the `application.hbs` from the `app/templates` directory into the `app/pods` directory and rename it to `template.hbs`.
 
 ```
-mv app/templates/application.hbs pods/template.hbs
+mv app/templates/application.hbs pods/application/template.hbs
 ```
 
 Remove `app/controllers`, `app/components`, `app/routes` and `app/templates` directories.
