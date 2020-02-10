@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fast-track to solid Ember Foundations"
+title: "Fast-track to Solid Ember Foundations"
 description: "Your cheat sheet to getting a new Ember app up and running, right"
 comments: true
 date: 2020-02-09 0:00
@@ -21,7 +21,6 @@ Everything is TL;DR.
 Bonus [PurgeCSS][purge] setup. 
 Enjoy!
 
-<br>
 
 ### Initialization
 
@@ -35,7 +34,6 @@ This initializes the directory and all dependencies for getting started.
 
 Will install dependencies for application. Newer versions of ember-cli should use yarn by default, but in older versions you may need to pass `--yarn true` to your `ember new` command.
 
-<br>
 
 ### PostCSS & Tailwind
 
