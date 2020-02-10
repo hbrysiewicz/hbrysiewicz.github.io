@@ -103,7 +103,6 @@ module.exports = {
 
 This would be where all the fun Tailwind configuration would happen when you're ready to dive into it. Tailwind is also great as it is just out of the box with defaults.
 
-<br>
 
 ### Transition to Pods
 
