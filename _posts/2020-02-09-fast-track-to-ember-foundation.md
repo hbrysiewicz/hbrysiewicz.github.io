@@ -29,7 +29,7 @@ Enjoy!
 
 This initializes the directory and all dependencies for getting started.
 
-`cd {name}}`
+`cd {name}`
 
 `yarn install`
 
