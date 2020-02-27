@@ -7,13 +7,17 @@ date:     2014-12-16 13:03
 tags:     [emberjs, components, facebook, ember-cli]
 ---
 
+<div class='warning'>
+<strong>Warning:</strong> This was created with older versions of Ember.js and is likely no longer relevant. Please tread lightly when referencing this article.
+</div>
+
 Getting Facebook integrated into an existing website may sound daunting but using the Facebook UI API and Ember together was entirely too easy.
 
 <a href='http://ember-cli.com'>Ember-CLI</a> has a directory called initializers that are loaded at app start up. This proves useful for things such as Google Analytics or Facebook SDK initialization.
 
 Here is what my `facebook-sdk.js` initializer looks like. Note the use of global FB. This is used so that JSHint doesn't freak out when building the project.
 
-{% highlight js linenos %}
+```javascript
 /* global FB */
 export default {
   name: 'facebook',
@@ -38,11 +42,11 @@ export default {
     window.fbAsyncInit = fbAsyncInit;
   }
 };
-{% endhighlight %}
+```
 
 Now I can use the global FB.ui in components with ease. So far I've only integrated the Facebook Send Dialogue into the application, but this alone can show how easy it is for the Facebook SDK to now integrate with your Ember Application.
 
-{% highlight js linenos %}
+```javascript
 /* global FB */
 import Ember from 'ember';
 
@@ -58,14 +62,14 @@ export default Ember.Component.extend({
     }
   }
 });
-{% endhighlight %}
+```
 
 Check out what other pieces you could use in your Ember application by visiting the <a href='https://developers.facebook.com/docs/javascript/quickstart/v2.2?locale=es_ES'>Facebook JS SDK Documentation</a>
 <br><br>
 
 I need the url sent in the FB send dialogue to be relative to the environment I am in so I added a little mixin I can use throughout the site to generate proper links for each environment. Check it out!
 
-{% highlight JavaScript linenos %}
+```javascript
 import Ember from 'ember';
 
 export default Ember.Mixin.create({
@@ -74,7 +78,7 @@ export default Ember.Mixin.create({
     return '%@//%@'.fmt(pathArray[0], pathArray[2]);
   }.property()
 });
-{% endhighlight %}
+```
 
 
 <div class='update'>

@@ -1,5 +1,5 @@
-name: Alexandra Brysiewicz
-description: A Technology blog by Alexandra Brysiewicz
+name: "A Touch of Technology"
+description: Technology writings from Alex Brysiewicz
 url: http://hbrysiewicz.com/
 markdown: kramdown
 highlighter: rouge
@@ -8,3 +8,5 @@ baseurl: .
 webrick:
   headers:
     Access-Control-Allow-Origin: "*"
+kramdown:
+  parse_block_html: true

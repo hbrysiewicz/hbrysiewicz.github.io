@@ -1,0 +1,79 @@
+@import url("https://use.typekit.net/fht3ici.css");
+
+p {
+  @apply mt-4 mb-4;
+}
+
+p > code {
+  @apply bg-code-gray p-1;
+}
+
+code {
+  @apply bg-code-gray p-1;
+}
+
+ul {
+  @apply pl-4;
+}
+
+ol {
+  @apply pl-4;
+
+  list-style-type: decimal;
+
+  li {
+    @apply mt-10;
+  }
+}
+
+.post > h1,
+.post > h3 {
+  @apply text-xl font-semibold mt-10;
+}
+
+.post > h2 {
+  @apply text-lg text-blue-400 mt-10;
+}
+
+.post {
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+  }
+
+ .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .warning {
+    @apply bg-orange-300 rounded-sm p-4;
+  }
+
+  p > img {
+    @apply rounded-sm border border-gray-200 p-4;
+  }
+
+  a {
+    @apply text-blue-400;
+
+    &:hover {
+      @apply underline;
+    }
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+
+  margin-bottom: -50px;
+}
+
+.footer {
+  height: 50px;
+}

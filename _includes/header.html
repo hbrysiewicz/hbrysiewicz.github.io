@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> {{ page.title }} </title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Alex&#39;s (mostly) computational adventures">
+
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta property="og:title" content="{{ page.title }}" />
+
+    <meta property="og:sitename" content="{{ page.title }}" />
+    <meta itemprop="name" content="{{ page.title }}">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://hbrysiewicz.com{{ page.url }}" />
+    <meta property="og:image" content="https://hbrysiewicz.com/assets/img/header_hd.jpg" />
+
+    {% if page.description %}
+      <meta name="twitter:description" content="{{ page.description }}">
+      <meta property="og:description" content="{{ page.description }}" />
+      <meta itemprop="description" content="{{ page.description }}">
+      <meta name="description" content="{{ page.description }}" />
+    {% else %}
+      <meta name="twitter:description" content="Alex&#39;s (mostly) computational adventures">
+      <meta property="og:description" content="Alex&#39;s (mostly) computational adventures" />
+      <meta itemprop="description" content="Alex&#39;s (mostly) computational adventures">
+      <meta name="description" content="Alex&#39;s (mostly) computational adventures" />
+    {% endif %}
+
+    <meta name="twitter:creator" content="@caligoanimus.com">
+    <meta name="twitter:domain" content="hbrysiewicz.com{{ page.url }}">
+    <meta name="twitter:image" content="https://hbrysiewicz.com/assets/img/header_hd.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@caligoanimus">
+
+    <link rel="author" href="https://plus.google.com/100486158890845220102/posts"/>
+    <link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
+
+    {% if page.keywords %}
+      <meta name="keywords" content="{{ page.keywords }}">
+    {% else %}
+      <meta name="keywords" content="default-keywords">
+    {% endif %}
+
+    <!-- Favicon! -->
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+
+    <!-- Google Fonts -->
+    <!-- TODO Change to Local -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>

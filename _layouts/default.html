@@ -1,100 +1,33 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ page.title }}</title>
+---
+---
 
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content='Alexandra Brysiewicz&#39;s adventures with Ember.js, Elixir, JavaScript and her life in Freelance.'>
-    <meta name="twitter:title" content="{{ page.title }}">
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="og:sitename" content="{{ page.title }}" />
-    <meta itemprop="name" content="{{ page.title }}">
-    {% if page.description %}
-    <meta name="twitter:description" content="{{ page.description }}">
-    <meta property="og:description" content="{{ page.description }}" />
-    <meta itemprop="description" content="{{ page.description }}">
-    <meta name="description" content="{{ page.description }}" />
-    {% else %}
-    <meta name="twitter:description" content="Alexandra Brysiewicz&#39;s adventures with Ember.js, JavaScript and her life in Freelance.">
-    <meta property="og:description" content="Alexandra Brysiewicz&#39;s adventures with Ember.js, JavaScript and her life in Freelance." />
-    <meta itemprop="description" content="Alexandra Brysiewicz&#39;s adventures with Ember.js, JavaScript and her life in Freelance.">
-    <meta name="description" content="Alexandra Brysiewicz&#39;s adventures with Ember.js, JavaScript and her life in Freelance." />
-    {% endif %}
-    <meta name="twitter:creator" content="@caligoanimus.com">
-    <meta name="twitter:domain" content="hbrysiewicz.com{{ page.url }}">
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="//hbrysiewicz.com{{ page.url }}" />
-    <meta property="og:image" content="//hbrysiewicz.com/assets/img/header_hd.jpg" />
-    <meta name="twitter:image" content="//hbrysiewicz.com/assets/img/header_hd.jpg">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@caligoanimus">
-    <link rel="author" href="https://plus.google.com/100486158890845220102/posts"/>
-    <link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
-    {% if page.keywords %}
-    <meta name="keywords" content="{{ page.keywords }}">
-    {% else %}
-    <meta name="keywords" content="default-keywords">
-    {% endif %}
+{% include header.html %}
 
-    <!-- Favicon! -->
-    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<div class="container px-10 flex flex-col justify-center mx-auto mt-32 wrapper">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/syntax.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap.css">
-    <link rel="stylesheet" href="/assets/css/font-awesome.css">
-    <link rel="stylesheet" href="/assets/css/prism.css">
+  <h1 class="text-4xl font-bold text-center font-serif hover:text-blue-500">
+    <a href="/"> {{ site.name }} </a>
+  </h1>
 
-    <!-- Google Fonts -->
-    <!-- TODO Change to Local -->
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
+  {% include social-links.html %}
 
-  </head>
-  <body>
+  <h2 class="text-xl font-light text-blue-400 text-center">
+    Writings from <a href="/about.html" class="hover:text-blue-600"> Alex </a>
+  </h2>
 
-    <div class="site">
-      <div class="header">
-        <div class="img"></div>
-        <div class='title-wrap'>
-          <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-          {% include social-links.html %}
-          <div id="subtitle">
-            <h2>A Technology blog by <a href='/about.html'>Alexandra Brysiewicz</a></h2>
-          </div>
-        </div>
-      </div>
+  <hr class="mt-20">
 
-      <div class="container site-container">
-        {{ content }}
-      </div>
-    </div>
+  <div class="container mt-10 mx-auto">
+    {{ content }}
+  </div>
+</div>
 
-    <div id="footer">
-      <div class="container">
-        <p class="text-center">
-          Alexandra Brysiewicz <span class="pink">|</span>
-          Encinitas, CA <span class="pink">|</span>
-          <a href="mailto:alex@starshot.tech">alex@starshot.tech</a>
-        </p>
-      </div>
-    </div>
+<div class="flex justify-between w-1/2 mt-20 mx-auto mb-20 text-light footer">
+  <div> <a href="/about" class="hover:text-blue-400"> Alex Brysiewicz </a> </div>
+  <div> Encinitas, CA</div>
+  <div>
+    <a href="mailto:alex@starshot.tech" class="hover:text-blue-400">alex@starshot.tech</a>
+  </div>
+</div>
 
-    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/assets/js/jquery.backstretch.min.js"></script>
-    <script type="text/javascript" src="/assets/js/main.js"></script>
-    <script type="text/javascript" src="/assets/js/prism.js"></script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26872721-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-26872721-2');
-    </script>
-  </body>
-</html>
+{% include footer.html %}

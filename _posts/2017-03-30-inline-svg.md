@@ -12,6 +12,10 @@ tags: [
 ]
 ---
 
+<div class='warning'>
+<strong>Warning:</strong> This was created with older versions of Ember.js and is likely no longer relevant. Please tread lightly when referencing this article.
+</div>
+
 SVG is a vector graphic that scales well and is great for vibrant user interfaces. This post doesn't go into SVG per se, but there is a great article on SVG and it's application in Web Development over at [CSS Tricks][css-tricks].
 
 SVG and Ember make for an exciting pair. Binding values and responding to events with SVG and Ember components just works and can create beautiful, fast, and responsive interfaces, easily. There was just a presentation on the matter at [EmberConf 2017][ember-conf] by [@jwwweber][jwwweber] that really showcases the flexibility of SVG with Ember.

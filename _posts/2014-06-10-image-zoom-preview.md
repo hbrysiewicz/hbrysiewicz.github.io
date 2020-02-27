@@ -8,11 +8,15 @@ date:     2014-06-11 00:00
 tags:     [emberjs, components, image, ui]
 ---
 
+<div class='warning'>
+<strong>Warning:</strong> This was created with older versions of Ember.js and is likely no longer relevant. Please tread lightly when referencing this article.
+</div>
+
 Recently I was tasked in creating a large photo plotting tool. Part of this was the ability to preview a zoomed in portion of the full image to ensure the plotted point was in an accurate position.
 
 There are two components I'll be talking about here that are using data bound in the controller between the both of them. One is the full-image preview and the other the zoomed-image preview.
 
-## The Component Templates
+# The Component Templates
 
 ...Are pretty straightforward. The high res image is displayed with a fixed height and width. In this example, I've made it 1/2 the size of the original. The `mouseX` and the `mouseY` coordinates are passed into the `ImagePreviewComponent` along with the image src. The mouse coordinates will allow the zoom to properly display at an accurate position.
 
@@ -24,7 +28,7 @@ When creating this there was actually a need for a boundary on the image so poin
 <a class="jsbin-embed" href="http://emberjs.jsbin.com/puhul/16/embed?html">Ember Starter Kit</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 
-## The Component Code
+# The Component Code
 
 The controller is going to keep the original source of `mouseX` and `mouseY`. These will be passed into both of the components.
 
@@ -36,7 +40,7 @@ The `ImageZoomComponent` uses `background-image` and `background-position` on th
 <a class="jsbin-embed" href="http://emberjs.jsbin.com/puhul/16/embed?js">Ember Starter Kit</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 
-## Live Demo
+# Live Demo
 
 Here is the live demo from above code. If you like, please leave a comment!
 

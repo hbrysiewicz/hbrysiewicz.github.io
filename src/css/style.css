@@ -1,0 +1,12 @@
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+/* purgecss end ignore */
+
+@import 'tailwindcss/utilities';
+
+@import 'monokai_syntax';
+@import 'summernote';
+@import 'prism';
+@import 'syntax';
+@import 'app';

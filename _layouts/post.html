@@ -2,38 +2,29 @@
 layout: default
 ---
 
-<div class="row">
-  <div class="col-md-offset-1 col-md-10">
-    <h2>{{ page.title }}</h2>
-    <p class="meta">
-      <span class="fa fa-clock-o fa-1x"></span>
-      {{ page.date | date_to_string }}
-    </p>
-  </div>
+<div>
+  <h3 class="font-serif text-2xl">
+    {{ page.title }}
+  </h3>
+
+  <h4 class="mt-1 text-sm flex">
+    {{ page.date | date: "%A %B %e, %Y" }}
+    <div class="pl-4 text-blue-400">
+      <a href="{{ page.url }}#disqus_thread"></a>
+    </div>
+  </h4>
 </div>
 
-<div class="divider"></div>
+<hr class="mt-10">
 
-<div class="row post">
-  <div class="col-md-offset-1 col-md-10">
-    {{ content }}
-  </div>
+<div class="mt-10 leading-loose font-thin tracking-wider post">
+  {{ content }}
 </div>
 
-<div class='row comments'>
+<hr class="mt-20">
+
+<div class="mt-20">
   {% if page.comments %}
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = 'hbrysiewicz';
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    {% include comments.html %}
   {% endif %}
 </div>

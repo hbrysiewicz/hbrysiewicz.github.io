@@ -1,0 +1,32 @@
+{
+  "name": "hbrysieiwcz.github.io",
+  "version": "1.0.0",
+  "description": "Ale'x (mostly) computational adventures",
+  "main": "gulpfile.babel.js",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "2.0.6",
+    "autoprefixer": "9.7.4",
+    "babel-preset-env": "1.7.0",
+    "babel-register": "6.26.0",
+    "browser-sync": "2.26.7",
+    "cssnano": "4.1.10",
+    "gulp": "4.0.2",
+    "gulp-postcss": "8.0.0",
+    "postcss-import": "12.0.1",
+    "postcss-nested": "^4.2.1",
+    "tailwindcss": "1.2.0"
+  },
+  "scripts": {
+    "build:production": "NODE_ENV=production gulp",
+    "build:dev": "NODE_ENV=development gulp",
+    "build": "npm run build:production",
+    "dev": "NODE_ENV=development gulp serve",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hbrysiewicz/hbrysiewicz.github.io.git"
+  },
+  "author": "Alex Brysiewicz",
+  "license": "MIT"
+}

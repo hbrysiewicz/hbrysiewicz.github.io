@@ -7,11 +7,15 @@ date:     2014-04-18 10:25
 tags:     [emberjs, components]
 ---
 
+<div class='warning'>
+<strong>Warning:</strong> This was created with older versions of Ember.js and is likely no longer relevant. Please tread lightly when referencing this article.
+</div>
+
 Users love wysiwyg editors. [Summernote](http://hackerwins.github.io/summernote/) has been my favorite to work with as a developer yet. Getting it hooked up as an Ember component was simple and fun, and the end result was rather nice.
 
 <a class="jsbin-embed" href="http://emberjs.jsbin.com/sofum/13/embed?output">Ember Wysiwyg Component</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
-## The Component
+# The Component
 
 All this does is wrap the basic [Ember.TextArea](http://emberjs.com/api/classes/Ember.TextArea.html). This example is rather bare to keep things simple but depending on the use-case the component and its logic could expand quite a bit. For example, when hooking up 'Insert Image' functionality.
 
