@@ -36,6 +36,11 @@ task("buildJekyll", () => {
 
   return spawn("bundle", args, { stdio: "inherit" });
 });
+              // purgecss({
+              //   content: [`${SITE_ROOT}/**/*.html`],
+              //   defaultExtractor: content =>
+              //     content.match(/[\w-/:]+(?<!:)/g) || []
+              // }),
 
 task("processStyles", () => {
   browserSync.notify("Compiling styles...");
@@ -49,11 +54,6 @@ task("processStyles", () => {
         nested(),
         ...(!isDevelopmentBuild
           ? [
-              purgecss({
-                content: [`${SITE_ROOT}/**/*.html`],
-                defaultExtractor: content =>
-                  content.match(/[\w-/:]+(?<!:)/g) || []
-              }),
               cssnano()
             ]
           : [])
