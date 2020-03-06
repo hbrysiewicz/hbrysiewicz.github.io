@@ -1,5 +1,9 @@
 @import url("https://use.typekit.net/fht3ici.css");
 
+html, body {
+  height: 100%;
+}
+
 p {
   @apply mt-4 mb-4;
 }
@@ -71,9 +75,5 @@ ol {
 .wrapper {
   min-height: 100%;
 
-  margin-bottom: -50px;
-}
-
-.footer {
-  height: 50px;
+  margin-bottom: -200px;
 }
