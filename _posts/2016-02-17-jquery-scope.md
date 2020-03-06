@@ -24,7 +24,7 @@ import $unit from 'jquery'
 import $top from 'utils/jquery-top'
 ```
 
-In the above example `jquery` is just the defacto `jquery` installed as a dependency via `npm`. The second `import` statement is a custom abstraction to the defacto `jquery` library which allows me to override the [seletor method](http://devdocs.io/jquery/jquery#jQuery1) and limit the context to `top.document`.
+In the above example `jquery` is just the defacto `jquery` installed as a dependency via `npm`. The second `import` statement is a custom abstraction to the defacto `jquery` library which allows me to override the [seletor method](https://devdocs.io/jquery/jquery#jQuery1) and limit the context to `top.document`.
 
 ```javascript
 import jQuery from 'jquery'

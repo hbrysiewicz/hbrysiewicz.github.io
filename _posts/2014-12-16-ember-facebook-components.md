@@ -13,7 +13,7 @@ tags:     [emberjs, components, facebook, ember-cli]
 
 Getting Facebook integrated into an existing website may sound daunting but using the Facebook UI API and Ember together was entirely too easy.
 
-<a href='http://ember-cli.com'>Ember-CLI</a> has a directory called initializers that are loaded at app start up. This proves useful for things such as Google Analytics or Facebook SDK initialization.
+<a href='https://ember-cli.com'>Ember-CLI</a> has a directory called initializers that are loaded at app start up. This proves useful for things such as Google Analytics or Facebook SDK initialization.
 
 Here is what my `facebook-sdk.js` initializer looks like. Note the use of global FB. This is used so that JSHint doesn't freak out when building the project.
 
@@ -57,7 +57,7 @@ export default Ember.Component.extend({
     sendLink: function() {
       FB.ui({
         method: 'send',
-        link: 'http://imgur.com',
+        link: 'https://imgur.com',
       });
     }
   }
@@ -82,5 +82,5 @@ export default Ember.Mixin.create({
 
 
 <div class='update'>
-<strong>Update:</strong> I expand on this post in a talk I gave for a <a href="http://sandiegojs.org">SanDiego.js</a> and <a href="http://www.meetup.com/sandiego-ember/">San Diego Ember</a> talk in February 2015. Watch it <a href="http://youtu.be/W73kfT-G7Cs">here</a> or view the slides <a href="http://hbrysiewicz.github.io/ember-fbcomp/#/">here</a>
+<strong>Update:</strong> I expand on this post in a talk I gave for a <a href="https://sandiegojs.org">SanDiego.js</a> and <a href="https://www.meetup.com/sandiego-ember/">San Diego Ember</a> talk in February 2015. Watch it <a href="https://youtu.be/W73kfT-G7Cs">here</a> or view the slides <a href="https://hbrysiewicz.github.io/ember-fbcomp/#/">here</a>
 </div>

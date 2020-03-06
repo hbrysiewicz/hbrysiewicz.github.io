@@ -22,7 +22,7 @@ Inside of the component template there is a div to represent the color picker wi
 There is also the hex input with the `value` bound to the hex representation of the color. Similar for the rgb inputs, except each one is bound to a different computed property for each r, g, b.
 
 
-<a class="jsbin-embed" href="http://emberjs.jsbin.com/geyit/10/embed?html">Ember Starter Kit</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="https://emberjs.jsbin.com/geyit/10/embed?html">Ember Starter Kit</a><script src="https://static.jsbin.com/js/embed.js"></script>
 
 
 ### The Component
@@ -38,10 +38,10 @@ When any of the rgb inputs is changed, the `color` has to be updated. This is wh
 Since `color` is being stored as the string html hex representation nothing too complicated happens inside the `hexValue` computed property but it does give a good example of how to do a computed property with both a set and get.
 
 
-<a class="jsbin-embed" href="http://emberjs.jsbin.com/geyit/10/embed?js">Ember Starter Kit</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="https://emberjs.jsbin.com/geyit/10/embed?js">Ember Starter Kit</a><script src="https://static.jsbin.com/js/embed.js"></script>
 
 
 ### Final Product
 
 
-<a class="jsbin-embed" href="http://emberjs.jsbin.com/geyit/10/embed?output">Ember Starter Kit</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="https://emberjs.jsbin.com/geyit/10/embed?output">Ember Starter Kit</a><script src="https://static.jsbin.com/js/embed.js"></script>

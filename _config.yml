@@ -1,6 +1,6 @@
 name: "A Touch of Technology"
 description: Technology writings from Alex Brysiewicz
-url: http://hbrysiewicz.com/
+url: https://hbrysiewicz.com/
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title.html

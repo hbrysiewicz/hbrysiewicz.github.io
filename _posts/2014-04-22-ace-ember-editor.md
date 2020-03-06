@@ -11,10 +11,10 @@ tags:     [emberjs, components, ace]
 <strong>Warning:</strong> This was created with older versions of Ember.js and is likely no longer relevant. Please tread lightly when referencing this article.
 </div>
 
-A few weeks ago there was a need to interface directly with raw json from the server. I immediately jumped on the chance to make an [Ace Editor](http://ace.c9.io/) component for Ember.js. I have been wanting to work with Ace for a while now and as expeted, getting setup with it was smooth much like integrating it with an Ember.Component.
+A few weeks ago there was a need to interface directly with raw json from the server. I immediately jumped on the chance to make an [Ace Editor](https://ace.c9.io/) component for Ember.js. I have been wanting to work with Ace for a while now and as expeted, getting setup with it was smooth much like integrating it with an Ember.Component.
 
 
-<a class="jsbin-embed" href="http://emberjs.jsbin.com/lizez/8/embed?output">Ember.js Ace Editor Component</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="https://emberjs.jsbin.com/lizez/8/embed?output">Ember.js Ace Editor Component</a><script src="https://static.jsbin.com/js/embed.js"></script>
 
 
 # The Component
@@ -34,5 +34,5 @@ Most of the logic in the Controller would be in the `Ember.Model` if using a mod
 The key is to ensure that `data` is only set when a proper JSON object is passed in as the `val`.
 
 
-<a class="jsbin-embed" href="http://emberjs.jsbin.com/lizez/8/embed?js">Ember.js Ace Editor Component</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="https://emberjs.jsbin.com/lizez/8/embed?js">Ember.js Ace Editor Component</a><script src="https://static.jsbin.com/js/embed.js"></script>
 

@@ -25,7 +25,7 @@ There are two components I'll be talking about here that are using data bound in
 When creating this there was actually a need for a boundary on the image so points could not be plotted on the edges, but I removed it for this example to keep it simple. It just adds more math to some of the calculations.
 
 
-<a class="jsbin-embed" href="http://emberjs.jsbin.com/puhul/16/embed?html">Ember Starter Kit</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="https://emberjs.jsbin.com/puhul/16/embed?html">Ember Starter Kit</a><script src="https://static.jsbin.com/js/embed.js"></script>
 
 
 # The Component Code
@@ -37,7 +37,7 @@ As the mouse moves within the `ImagePreviewComponent` the actual offset is calcu
 The `ImageZoomComponent` uses `background-image` and `background-position` on the full-size high res photo to display only the desired portion in the zoom preview box. The idea here is as the `mouseX` and `mouseY` values change scale them up, in this case double themselves, and then center them within the image zoom container. I made the container 316px by 246px so I subtract 1/2 of those values from their respective coordinate. Then, the background position can be set correctly.
 
 
-<a class="jsbin-embed" href="http://emberjs.jsbin.com/puhul/16/embed?js">Ember Starter Kit</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="https://emberjs.jsbin.com/puhul/16/embed?js">Ember Starter Kit</a><script src="https://static.jsbin.com/js/embed.js"></script>
 
 
 # Live Demo
@@ -45,5 +45,5 @@ The `ImageZoomComponent` uses `background-image` and `background-position` on th
 Here is the live demo from above code. If you like, please leave a comment!
 
 
-<a class="jsbin-embed" href="http://emberjs.jsbin.com/puhul/16/embed?output">Ember Starter Kit</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="https://emberjs.jsbin.com/puhul/16/embed?output">Ember Starter Kit</a><script src="https://static.jsbin.com/js/embed.js"></script>
 

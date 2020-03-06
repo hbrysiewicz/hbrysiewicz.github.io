@@ -15,7 +15,7 @@ This post is a response to a comment from the [Ember.js Wysiwyg Summernote post]
 
 <img src='/assets/img/ember-cli-bootstrap-comment.png' width='100%'>
 
-I chose to stick to vanilla <a href='http://getbootstrap.com'>Bootstrap</a> for this solution. There are a few packaged modules out there specifically for <a href='http://www.ember-cli.com/'>Ember-CLI</a> but I have yet to find one that <strong>just works</strong>. This walkthrough will actually get Sass and Bootstrap-Sass working together. I'll also explain how to get the default <a href='http://getbootstrap.com/components/#glyphicons'>Bootstrap Glyphicons</a> pack working as well as how to add the <a href='http://fortawesome.github.io/Font-Awesome/'>FontAwesome</a> icon pack.
+I chose to stick to vanilla <a href='https://getbootstrap.com'>Bootstrap</a> for this solution. There are a few packaged modules out there specifically for <a href='https://www.ember-cli.com/'>Ember-CLI</a> but I have yet to find one that <strong>just works</strong>. This walkthrough will actually get Sass and Bootstrap-Sass working together. I'll also explain how to get the default <a href='https://getbootstrap.com/components/#glyphicons'>Bootstrap Glyphicons</a> pack working as well as how to add the <a href='https://fortawesome.github.io/Font-Awesome/'>FontAwesome</a> icon pack.
 
 ### New Ember-CLI Application
 
@@ -39,7 +39,7 @@ $ npm install --save broccoli-sass
 $ mv app/styles/app.css app/styles/app.scss
 </pre>
 
-This example will use the `bootstrap-sass-official` <a href='http://bower.io/'>Bower</a> package. To get Glyphicons working we will need to also add another Broccoli plugin for static asset compilation called `broccoli-static-compiler`.
+This example will use the `bootstrap-sass-official` <a href='https://bower.io/'>Bower</a> package. To get Glyphicons working we will need to also add another Broccoli plugin for static asset compilation called `broccoli-static-compiler`.
 
 <pre class='terminal'>
 $ bower install --save bootstrap-sass-official

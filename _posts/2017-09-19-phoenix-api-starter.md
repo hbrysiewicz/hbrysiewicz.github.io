@@ -151,7 +151,7 @@ alias {ApiName}Web.V1.PostView
 
 # Test out JSON response
 
-Spin up the server with `mix phx.server` and using your preferred REST client try and hit `http://localhost:4000/api/v1/posts`. Make sure you have `Content-Type: application/json` in whatever REST client you happen to use.
+Spin up the server with `mix phx.server` and using your preferred REST client try and hit `https://localhost:4000/api/v1/posts`. Make sure you have `Content-Type: application/json` in whatever REST client you happen to use.
 
 You should receive an empty response.
 
@@ -177,7 +177,7 @@ Repo.insert!(%Post{title: "Next steps with Phoenix and JSON API", is_published: 
 
 This can be executed with `mix run priv/repo/seeds.ex`.
 
-Now hit `http://localhost:4000/api/v1/posts` again and you should see the two records returned as JSON.
+Now hit `https://localhost:4000/api/v1/posts` again and you should see the two records returned as JSON.
 
 ```json
 {
@@ -287,7 +287,7 @@ render(conn, "show.json-api", data: posts)
 
 ## Test it out
 
-Now if we hit `http://localhost:4000/api/v1/posts` we will see the expected response for our inserted data returned in JSON API format!
+Now if we hit `https://localhost:4000/api/v1/posts` we will see the expected response for our inserted data returned in JSON API format!
 
 ```json
 {
@@ -315,7 +315,7 @@ Now if we hit `http://localhost:4000/api/v1/posts` we will see the expected resp
 }
 ```
 
-And similarly, if we travel to `http://localhost:4000/api/v1/posts/1` our first record will be returned in JSON API format as well.
+And similarly, if we travel to `https://localhost:4000/api/v1/posts/1` our first record will be returned in JSON API format as well.
 
 ```json
 {
@@ -338,11 +338,11 @@ Congratulations! You have your first JSON API with Phoenix!
 Please feel free to kindly share your corrections, misinformations, or suggestions in the comments.
 
 [elixir-conf]: https://elixirconf.com/
-[phx]: http://phoenixframework.org/
+[phx]: https://phoenixframework.org/
 [chris]: https://twitter.com/chris_mccord?lang=en
-[nerves]: http://nerves-project.org/
-[phx-1.3]: http://phoenixframework.org/blog/phoenix-1-3-0-released
+[nerves]: https://nerves-project.org/
+[phx-1.3]: https://phoenixframework.org/blog/phoenix-1-3-0-released
 [install]: https://hexdocs.pm/phoenix/installation.html#content
-[brunch]: http://brunch.io/
-[json-api]: http://jsonapi.org/
+[brunch]: https://brunch.io/
+[json-api]: https://jsonapi.org/
 [jaserializer]: https://github.com/vt-elixir/ja_serializer

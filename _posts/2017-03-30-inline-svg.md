@@ -54,10 +54,10 @@ I am very interested in hearing about other solutions to this problem, especiall
 
 
 [css-tricks]: https://css-tricks.com/using-svg/
-[e-c]: http://ember-concurrency.com
-[ember-conf]: http://emberconf.com/schedule.html#svg-animation-and-interaction-in-ember
+[e-c]: https://ember-concurrency.com
+[ember-conf]: https://emberconf.com/schedule.html#svg-animation-and-interaction-in-ember
 [ember-twiddle-1]:https://ember-twiddle.com/d4e4aad8932df3c2bee9ea49ca173875?fileTreeShown=false&numColumns=2&openFiles=controllers.application.js%2Ctemplates.components.clickable-svg.hbs
 [ember-twiddle-2]: https://ember-twiddle.com/ad6664ec5635f9fbf59a7045ed064590?fileTreeShown=false&numColumns=2&openFiles=models.image.js%2Ctemplates.components.clickable-svg.hbs
-[jwwweber]: http://twitter.com/jwwweber
+[jwwweber]: https://twitter.com/jwwweber
 
 
