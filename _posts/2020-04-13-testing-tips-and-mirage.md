@@ -16,21 +16,29 @@ tags: [
 
 Tests can some time be an after-thought for developers, but what is holding these developers back? Is it a fast-paced startup culture that is constantly demanding of features and deadlines? Is it their natural human resistence to learn something new? <sup>[1](https://tomprof.stanford.edu/posting/1649)</sup> Or maybe the developer is just more interested in visual progress and doesn't see that kind of success in testing?
 
+Earlier this month I asked developers why. The answers weren't much of a surprise.
+
+<div class="w-1/2 mx-auto">
+  <a href="https://twitter.com/caligoanimus/status/1246085460587241472">
+    <img src="/assets/img/testing-poll.png" alt="testing poll results">
+  </a>
+</div>
+
 I've had the pleasure to work with many different clients, but their stories about testing can often sound familiar. Businesses can move fast; management pressure to perform can cause us to avoid our inner conscience that might be telling us to test better, or to test at all.
 
 Having worked on many teams that skirt testing in leau of feature development, I've found that addressing just a few small steps in the testing process can rapidly improve a developers ability to test. 
 
 # TDD?
 
-How should you test? There have been many different "best" testing philosophies over the years, but at the end of the day the right one is the one that works best in *your* development flow and for *you*. There are many different types of developers out there, as they are human, and thus many different ways to identify, solve, and test problems. 
+How should you test? There have been many different "best" testing philosophies over the years, but at the end of the day the right one is the one that works best in *your* development flow and for *you*. There are many different types of developers out there, as they are human, and consequently many different ways to identify, solve, and test problems. 
 
-TDD stands for "Test-driven development" and often begins with defining the tests before beginning to write the software. This is a popular testing philosophy that has been passed around, in recent years, especially. However, TDD requires to define one's parameters for a peice of software *first* and then write the software such that the parameters pass.<sup>[2](https://en.wikipedia.org/wiki/Test-driven_development)</sup>
+TDD stands for "Test-driven development" and often begins with defining the tests before beginning to write the software. This is a popular testing philosophy that has been passed around, in recent years especially. However, TDD requires to define one's parameters for a peice of software *first* and then write the software such that the parameters pass.<sup>[2](https://en.wikipedia.org/wiki/Test-driven_development)</sup>
 
 TDD sets extremely high standards; to clearly identify parameters on a first go is just setting developers up to dismiss testing all together, simply because the most popular testing methodology does not work for them. How can you write clearly defined tests when even business doesn't know what they want?
 
-Unfortunately, this approach is still missing a natural part of the process. The reality is that most organizations (and I hate to use this term, but it is wildly appropriate here) rely on a symbiotic relationship between the engineering team and the business stake-holders defining the requirements. Depending on the organization, the business stake-holders may define requirements quite well and still miss critical edge cases or technology considerations that the developer is expected to infer or inquire about.
+Unfortunately, this approach is still missing a natural part of the process. The reality is that most organizations rely on a symbiotic relationship between the engineering team and the business stake-holders defining the requirements. Depending on the organization, the business stake-holders may define requirements quite well and still miss critical edge cases or technology considerations that the developer is expected to infer or inquire about.
 
-There is an interchange between testing, building, tweaking, and retesting that takes place in any software development. This is what I would say the ideal testing methodology is.
+There is an interchange between testing, building, tweaking, and retesting that takes place in any software development process. This is what I would say the ideal testing methodology is.
 
 > In a sense, testing software is the reverse of the traditional scientific method, where you test the universe and then use the results of that experiment to refine your hypothesis. Instead, with software, if our “experiments” (tests) don’t prove out our hypothesis (the assertions the test is making), we change the system we are testing.<sup>[3](https://www.codesimplicity.com/post/the-philosophy-of-testing/)</sup>
 
@@ -42,7 +50,7 @@ What kind of test is necessary? The definitions and lines between types of testi
 * Acceptance testing
 * End-to-end testing
 
-The best-case answer is that all of these should be utilized to build a robust and thorough test suite for your system. However, that is asking a lot of an organization or developer that doesn't have any tests.
+The best-case answer is that all of these should be utilized to build a robust and thorough test suite for your system. However, that is asking a lot of an organization or developer that doesn't have any tests to begin with.
 
 When introducing a team to testing, either for the first time or on a more intimate level, I begin with Acceptance tests. Acceptance tests are great for translating business requirements to tests and are the easist to implement since they reflect the system one is testing completely. 
 
