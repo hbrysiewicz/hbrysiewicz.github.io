@@ -5,8 +5,6 @@
 
 @import 'tailwindcss/utilities';
 
-@import 'monokai_syntax';
 @import 'summernote';
-@import 'prism';
-@import 'syntax';
 @import 'app';
+@import 'material-dark-theme';

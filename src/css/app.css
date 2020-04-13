@@ -5,29 +5,29 @@ html, body {
 }
 
 p {
-  @apply mt-4 mb-4;
-}
-
-p > code {
-  @apply bg-code-gray p-1;
+  @apply mt-4 mb-4 text-justify;
 }
 
 code {
-  @apply bg-code-gray p-1;
+  @apply text-sm inline px-1;
+}
+
+pre code {
+  @apply rounded;
+  font-size: .75rem !important;
 }
 
 ul {
-  @apply pl-4;
+  @apply pl-8;
 }
 
 ol {
   @apply pl-4;
-
   list-style-type: decimal;
+}
 
-  li {
-    @apply mt-10;
-  }
+blockquote {
+  @apply text-gray-700 p-8 pl-16 text-justify italic border-l-4 pl-4;
 }
 
 .post > h1,
