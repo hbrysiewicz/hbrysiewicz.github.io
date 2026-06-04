@@ -3,6 +3,11 @@ layout: default
 ---
 
 <div>
+  {% if site.posts.size == 0 %}
+    <div class="mt-6 leading-loose font-thin tracking-wider">
+      <p>No posts yet — check back soon.</p>
+    </div>
+  {% else %}
   <ul>
 
     {% for post in site.posts %}
@@ -35,6 +40,7 @@ layout: default
     {% endfor %}
 
   </ul>
+  {% endif %}
 </div>
 
 {% include comments-count.html %}
